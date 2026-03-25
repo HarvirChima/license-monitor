@@ -7,10 +7,10 @@ A lightweight Python script that monitors your **GitHub Enterprise Cloud** licen
 ## How It Works
 
 ```
-┌──────────────────────┐      ┌──────────────────────┐      ┌──────────────┐
-│ GitHub Actions cron   │─────▶│ GitHub REST API       │─────▶│ Slack Webhook │
-│ (or manual trigger)   │      │ /consumed-licenses    │      │ notification  │
-└──────────────────────┘      └──────────────────────┘      └──────────────┘
+┌──────────────────────┐      ┌──────────────────────┐      ┌───────────────┐
+│ GitHub Actions cron  │─────▶│ GitHub REST API      │─────▶│ Slack Webhook │
+│ (or manual trigger)  │      │ /consumed-licenses   │      │ notification  │
+└──────────────────────┘      └──────────────────────┘      └───────────────┘
 ```
 
 1. The script calls the GitHub Enterprise **consumed-licenses** endpoint to retrieve the number of seats purchased and seats consumed.
