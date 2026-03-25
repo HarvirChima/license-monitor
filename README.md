@@ -14,7 +14,7 @@ A lightweight Python script that monitors your **GitHub Enterprise Cloud** licen
 ```
 
 1. The script calls the GitHub Enterprise **consumed-licenses** endpoint to retrieve the number of seats purchased and seats consumed.
-2. It calculates the usage percentage and compares it to a configurable threshold (default: **90 %**).
+2. It calculates the usage percentage and compares it to a configurable threshold (default: **90%**).
 3. If usage meets or exceeds the threshold, a rich Slack message is posted to your channel via an [Incoming Webhook](https://api.slack.com/messaging/webhooks).
 
 ---
@@ -152,7 +152,7 @@ The alert severity changes automatically:
 |---|---|---|
 | **OK** | Usage below threshold | 🟢 |
 | **Warning** | Usage at or above threshold | 🟡 |
-| **Critical** | All seats consumed (100 %) | 🔴 |
+| **Critical** | All seats consumed (100%) | 🔴 |
 
 ---
 
